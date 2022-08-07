@@ -5,7 +5,6 @@ insert into role (id, name) values (1, "ROLE_ADMIN"), (2, "ROLE_USER"), (3, "ROL
 
 insert into user (type, id, password, status, username, name, ruc, phone)
 values ("C", 1, "$2a$10$moL91es4MRuDvKI1hBhCa.7bIJ2.J8JT7K96jFEQrfLs9zGGETyqS", 1, "centro@demo.com", "Centro 1", "20600614861", "999999999");
-
 insert into user_role (user_id, role_id) values (1, 3);
 
 insert into user (type, id, password, status, username, first_name, last_name)

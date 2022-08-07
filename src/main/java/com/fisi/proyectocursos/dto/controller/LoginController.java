@@ -41,21 +41,27 @@ public class LoginController {
 	
 	@GetMapping("/login")
 	public String login(Model model, String error, String logout) {
-		if (securityService.isAuthenticated()) {
-			return "redirect:/";
+		try{
+			if (securityService.isAuthenticated()) {
+				return "redirect:/";
+			}
+
+			if (error != null) {
+				model.addAttribute("error", "Su correo y contraseña no son válidos.");
+			}
+
+			if (logout != null) {
+				model.addAttribute("message", "Se ha desconectado con éxito.");
+			}
+
+			return "auth/login";
+		}catch(Exception ex){
+			System.err.println(ex);
+			return ex.toString();
 		}
-		
-		if (error != null) {
-			model.addAttribute("error", "Su correo y contraseña no son válidos.");
-		}
-		
-		if (logout != null) {
-			model.addAttribute("message", "Se ha desconectado con éxito.");
-		}
-		
-		return "auth/login";
 	}
-	
+
+
 	@GetMapping("/registro")
 	public String registro(Model model) {
 		if (securityService.isAuthenticated()) {
