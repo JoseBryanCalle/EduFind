@@ -8,40 +8,40 @@ values ("C", 1, "$2a$10$moL91es4MRuDvKI1hBhCa.7bIJ2.J8JT7K96jFEQrfLs9zGGETyqS", 
 insert into user_role (user_id, role_id) values (1, 3);
 
 insert into user (type, id, password, status, username, first_name, last_name)
-values ("P", 2, "$2a$10$moL91es4MRuDvKI1hBhCa.7bIJ2.J8JT7K96jFEQrfLs9zGGETyqS", 1, "admin1@demo.com", "Leonardo", "Loaiza");
+values ("P", 2, "$2a$10$moL91es4MRuDvKI1hBhCa.7bIJ2.J8JT7K96jFEQrfLs9zGGETyqS", 1, "jcalle@demo.com", "Jose", "Calle");
 
 insert into user_role (user_id, role_id) values (2, 1);
 
 insert into user (type, id, password, status, username, first_name, last_name)
-values ("P", 3, "$2a$10$moL91es4MRuDvKI1hBhCa.7bIJ2.J8JT7K96jFEQrfLs9zGGETyqS", 1, "admin2@demo.com", "Miguel", "Otoya");
+values ("P", 3, "$2a$10$moL91es4MRuDvKI1hBhCa.7bIJ2.J8JT7K96jFEQrfLs9zGGETyqS", 1, "motoya@demo.com", "Miguel", "Otoya");
 
 insert into user_role (user_id, role_id) values (3, 1);
 
 insert into user (type, id, password, status, username, first_name, last_name)
-values ("P", 4, "$2a$10$moL91es4MRuDvKI1hBhCa.7bIJ2.J8JT7K96jFEQrfLs9zGGETyqS", 1, "admin3@demo.com", "Alexis", "Tocto");
+values ("P", 4, "$2a$10$moL91es4MRuDvKI1hBhCa.7bIJ2.J8JT7K96jFEQrfLs9zGGETyqS", 1, "aasencio@demo.com", "Aldair", "Asencio");
 
 insert into user_role (user_id, role_id) values (4, 1);
 
 insert into course (name, schedule, start_date, duration, status, url, category_id, training_center_id)
-values ("Python desde cero", "LUN 08:00 - 12:00", "2021/05/10", 24, 1, "URL", 2, 1);
+values ("Python desde cero", "LUN 08:00 - 12:00", "2022/10/10", 24, 1, "URL", 2, 1);
 
 insert into course (name, schedule, start_date, duration, status, url, category_id, training_center_id)
-values ("PHP desde cero", "JUE 08:00 - 12:00", "2021/05/21", 16, 1, "URL", 2, 1);
+values ("PHP desde cero", "JUE 08:00 - 12:00", "2022/10/21", 16, 1, "URL", 2, 1);
 
 insert into course (name, schedule, start_date, duration, status, url, category_id, training_center_id)
-values ("NodeJS desde cero", "LUN MIE 08:00 - 12:00", "2021/05/06", 24, 1, "URL", 2, 1);
+values ("NodeJS desde cero", "LUN MIE 08:00 - 12:00", "2022/10/26", 24, 1, "URL", 2, 1);
 
 insert into course (name, schedule, start_date, duration, status, url, category_id, training_center_id)
-values (".NET desde cero", "LUN 08:00 - 12:00", "2021/05/13", 20, 1, "URL", 2, 1);
+values (".NET desde cero", "LUN 08:00 - 12:00", "2022/10/19", 20, 1, "URL", 2, 1);
 
 insert into course (name, schedule, start_date, duration, status, url, category_id, training_center_id)
-values ("Excel Básico", "LUN MAR 08:00 - 12:00", "2021/05/25", 16, 1, "URL", 6, 1);
+values ("Excel Básico", "LUN MAR 08:00 - 12:00", "2022/10/25", 16, 1, "URL", 6, 1);
 
 insert into course (name, schedule, start_date, duration, status, url, category_id, training_center_id)
-values ("AWS Essentials", "SAB 08:00 - 12:00", "2021/05/07", 32, 1, "URL", 4, 1);
+values ("AWS Essentials", "SAB 08:00 - 12:00", "2022/10/17", 32, 1, "URL", 4, 1);
 
 insert into course (name, schedule, start_date, duration, status, url, category_id, training_center_id)
-values ("Scrum Master", "DOM 08:00 - 12:00", "2021/05/10", 16, 1, "URL", 7, 1);
+values ("Scrum Master", "DOM 08:00 - 12:00", "2022/10/10", 16, 1, "URL", 7, 1);
 
 
 commit;
